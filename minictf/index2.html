@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>It works!</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/final.css" />
+		<script type="text/javascript">
+		var kickAss = false;
+			function addNewItem(object)
+			{
+				var newObject = document.createElement("input");
+				var helpText = document.createElement("span");
+				var userValue = prompt("Please enter a value for this " + object);
+				if(userValue == null)
+				{
+					return;
+				}
+				document.getElementById("webServerStatus").innerHTML = "The web server software is running.";
+				helpText.innerHTML = userValue;
+				if(object == "textbox")
+				{
+					newObject.setAttribute("type", "text");
+					var breakLine = document.createElement("span");
+					breakLine.innerHTML = "<br />";
+					document.getElementById("contents").appendChild(helpText);
+					document.getElementById("contents").appendChild(newObject);
+					document.getElementById("contents").appendChild(breakLine);
+				}
+				else if(object == "password field")
+				{
+					newObject.setAttribute("type", "password");
+					var breakLine = document.createElement("span");
+					breakLine.innerHTML = "<br />";
+					document.getElementById("contents").appendChild(helpText);
+					document.getElementById("contents").appendChild(newObject);
+					document.getElementById("contents").appendChild(breakLine);
+				}
+				else if(object == "large field")
+				{
+					newObject = document.createElement("textarea");
+					helpText.innerHTML = helpText.innerHTML + "<br />";
+					var breakLine = document.createElement("span");
+					breakLine.innerHTML = "<br />";
+					document.getElementById("contents").appendChild(helpText);
+					document.getElementById("contents").appendChild(newObject);
+					document.getElementById("contents").appendChild(breakLine);
+				}
+				else if(object == "checkbox")
+				{
+					newObject.setAttribute("type", "checkbox");
+					helpText.innerHTML = helpText.innerHTML + "<br />";
+					document.getElementById("contents").appendChild(newObject);
+					document.getElementById("contents").appendChild(helpText);
+				}
+				else if(object == "radio button")
+				{
+					newObject.setAttribute("type", "radio");
+					newObject.setAttribute("name", "radioChoice");
+					helpText.innerHTML = helpText.innerHTML + "<br />";
+					document.getElementById("contents").appendChild(newObject);
+					document.getElementById("contents").appendChild(helpText);
+				}
+				else if(object == "button")
+				{
+					newObject.setAttribute("type", "button");
+					newObject.setAttribute("value", helpText.innerHTML);
+					newObject.setAttribute("onClick", "alert('Finished? Now you can try destroying it!'); addKickAss()");
+					var breakLine = document.createElement("span");
+					breakLine.innerHTML = "<br />";
+					document.getElementById("contents").appendChild(newObject);
+					document.getElementById("contents").appendChild(breakLine);
+				}
+			}
+			function addKickAss()
+			{
+				if(!kickAss)
+				{
+					var btn = document.createElement('input');
+					btn.setAttribute('type', 'button');
+					btn.setAttribute('value', 'Destroy the website!');
+					btn.setAttribute("onClick", "destroyWebsite()")
+					document.getElementById("contents").appendChild(btn);
+					var breakLine = document.createElement("span");
+					breakLine.innerHTML = "<br />";
+					document.getElementById("contents").appendChild(breakLine);
+				}
+			}
+			function destroyWebsite()
+			{
+				var KICKASSVERSION='2.0';
+				var s = document.createElement('script');
+				s.type='text/javascript';
+				document.body.appendChild(s);
+				s.src='//hi.kickassapp.com/kickass.js';
+				void(0)
+			}
+		</script>
+		<script type="text/javascript">
+			function onClose()
+			{
+				var content = document.getElementById("contents");
+				contents.removeAttribute("class");
+				document.getElementById("main").removeChild(document.getElementById("popup"));
+			}
+			function addStuff()
+			{
+				var content = document.getElementById("contents");
+				content.setAttribute("class", "overlay");
+				var newPopup = document.createElement('div');
+				newPopup.setAttribute("id", "popup");
+				newPopup.innerHTML = '<h2>Please select any new items you wish to add:</h2> <input type="button" onClick="addNewItem(&#39;textbox&#39;)" value="Add a new text box" /> <br /> <input type="button" onClick="addNewItem(&#39;password field&#39;)" value="Add a new password field" /> <br /> <input type="button" onClick="addNewItem(&#39;large field&#39;)" value="Add a new large field" /> <br /> <input type="button" onClick="addNewItem(&#39;checkbox&#39;)" value="Add a new check box" /> <br /> <input type="button" onClick="addNewItem(&#39;radio button&#39;)" value="Add a new radio button" /> <br /> <input type="button" onClick="addNewItem(&#39;button&#39;)" value="Add a new button" /> <br /> <input type="button" onClick="onClose()" value="Close" />';
+				document.getElementById("main").appendChild(newPopup);
+			}
+		</script>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-37989419-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	</head>
+
+	<body id="main">
+		<div id="contents">
+			<h1>It works!</h1>
+			<p>This is the default web page for this server</p>
+			<p id="webServerStatus">The web server software is running but no content has been added, yet.</p>
+			<input type="button" onClick="addStuff()" value="Add components" />
+			<br />
+		</div>
+	</body>
+</html>

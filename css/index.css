@@ -1,0 +1,159 @@
+/* Main css */
+#contents
+{
+	padding: 10px;
+}
+#top-content
+{
+	text-align: center;
+}
+#top-content p:first-child
+{
+	font-size: 200%;
+	font-family: cursive;
+}
+#content-mini-pic
+{
+	display: block;
+	width: 100%;
+	margin: auto 0;
+	list-style-type: none;
+	text-align: center;
+	vertical-align: middle;
+}
+#content-mini-pic li
+{
+	display: inline-block;
+	min-width: 50px;
+	min-height: 50px;
+	background-color: #D3D3D3;
+	margin: 2px 0;
+	position: relative;
+	z-index: 1;
+	list-style-type: none;
+}
+.section
+{
+	display: none;
+	position: absolute;
+	bottom: 63px;
+	height: 100px;
+	width: 200px;
+	background-color: blue;
+	left: -80px;
+	word-wrap: break-word;
+}
+#content-mini-pic li:hover .section
+{
+	display: block;
+}
+#content-mini-pic img
+{
+	width: 50px;
+	height: 50px;
+}
+#main-content, #recent-project
+{
+	width: 80%;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+#main-content
+{
+	border: 1px solid;
+	border-radius: 5px;
+	float: none;
+	min-height: 120px;
+}
+#recent-project
+{
+	height: 200px;
+	margin-top: 30px;
+}
+#content-container
+{
+	position: relative;
+}
+.side
+{
+	display: block;
+	position: absolute;
+	height: 100%;
+	bottom: 0;
+	float: left;
+	width: 8%;
+	background-color: #EFEFEF;
+}
+.side:hover
+{
+	background-color: #DFDFDF;
+}
+.side img
+{
+	display: block;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+#left
+{
+	left: 0;
+}
+#right
+{
+	right: 0;
+}
+.selected
+{
+	border: 2px solid;
+	border-color: red;
+}
+/* THE SPEECH BUBBLE
+------------------------------------------------------------------------------------------------------------------------------- */
+.triangle-quote
+{
+	border:2px solid black;
+	color: 333;
+	background: #fff;
+	/* css3 */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+
+/* THE TRIANGLE
+------------------------------------------------------------------------------------------------------------------------------- */
+
+.triangle-quote:before
+{
+	content: "";
+	position: absolute;
+	bottom: -10px; /* value = - border-top-width - border-bottom-width */
+	left: 80px; /* controls horizontal position */
+    border-width: 10px 20px 0;
+	border-style: solid;
+    border-color: black transparent;
+    /* reduce the damage in FF3.0 */
+    display: block; 
+    width: 0;
+}
+
+/* creates the smaller triangle */
+.triangle-quote:after
+{
+	content: "";
+	position: absolute;
+	bottom: -8px; /* value = - border-top-width - border-bottom-width */
+	left: 87px; /* value = (:before left) + (:before border-left) - (:after border-left) */
+	border-width: 8px 13px 0;
+	border-style: solid;
+	border-color: #fff transparent;
+    /* reduce the damage in FF3.0 */
+    display: block; 
+    width: 0;
+}

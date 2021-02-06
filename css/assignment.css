@@ -1,0 +1,20 @@
+#contents
+{
+	width: 700px;
+	margin: auto;
+	font-weight: bold;
+}
+blockquote
+{
+	border: solid;
+	border-width: 1px;
+	border-color: white;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+}
+#body
+{
+	background-color: #DCDCDC;
+	font-family: helvetica, sans-serif;
+}

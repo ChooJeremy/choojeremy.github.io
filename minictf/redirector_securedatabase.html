@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+	const urlParams = new URLSearchParams(window.location.search);
+	if(urlParams.get('username') !== null && urlParams.get('password') !== null) {
+		var username = urlParams.get('username');
+		var password = urlParams.get('password');
+		if(username == "admin" && password == "ExtremelySecurePassword!@#$") {
+			window.location.href = "index2";
+		} else {
+			window.location.href = "securedatabase";
+		}
+	} else {
+		window.location.href = "securedatabase";
+	}
+</script>
+</body>
+</html>

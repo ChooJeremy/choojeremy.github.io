@@ -1,0 +1,27 @@
+body
+{
+	font-family: sans-serif;
+}
+form ul
+{
+	padding: 0;
+	list-style: none;
+}
+form ul li
+{
+	margin-bottom: 10px;
+}
+form ul li label
+{
+	font-family: monospace;
+	font-size: 18px;
+}
+#fakeLink
+{
+	text-decoration: underline;
+	color: #0000FF;
+}
+#fakeLink:hover
+{
+	text-decoration: line-through;
+}

@@ -1,0 +1,44 @@
+#contents
+{
+	width: 800px;
+	margin: auto;
+	margin-top: 5px;
+	padding: 20px;
+	border-style: dotted;
+	border-radius: 2px;
+	border-color: black;
+}
+#content
+{
+	width: 270px;
+}
+.logoImg
+{
+	height: 60px;
+	padding: 20px;
+}
+.contacttext
+{
+	width: 600px;
+}
+.contacttext h1
+{
+	padding-bottom: 10px;
+}
+.contacttext p
+{
+	padding: 7px;
+}
+.float-left
+{
+	float: left;	
+	margin: 0 0 0 20px;
+}
+
+.float-right
+{
+	float: right;
+	margin: 0 20px 0 0;
+	width: 130px;
+	text-align: center;
+}

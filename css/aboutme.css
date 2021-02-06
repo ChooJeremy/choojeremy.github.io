@@ -1,0 +1,210 @@
+.menuItems
+{
+	cursor: pointer;
+}
+.contents
+{
+	width: 1900px;
+	margin: auto;
+}
+blockquote
+{
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+	border-left: 0px;
+}
+blockquote::before
+{
+	content: ' ';
+	padding:22px;
+	display:block;
+	background: url('../images/blockquote-left.png') no-repeat scroll left 20px transparent;
+}
+blockquote::after
+{
+	content:' ';
+	padding:12px;
+	display:block;
+	background: url('../images/blockquote-right.png') no-repeat scroll right 80% transparent;
+}
+.quoteSource
+{
+	padding: 40px 0;
+}
+.quoteSource:first-child
+{
+	padding-top: 150px;
+}
+.mainText
+{
+	margin: 0 auto;
+	min-width: 980px;
+	overflow: auto;
+	width: 980px;
+}
+.bgitem
+{
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+#first
+{
+	background: url(../images/homelogo.png) 50% 0 no-repeat fixed;
+	color: black;
+	height: 600px;
+}
+#second
+{
+	background: url(../images/blue.jpg) 50% 0 no-repeat fixed;
+	color: black;
+	height: 800px;
+}
+#third
+{
+	background: url(../images/bg3.png) 50% 0 no-repeat fixed;
+	color: white;
+	height: 768px;
+}
+#fourth
+{
+	background: url(../images/awardbackground.png) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1300px;
+}
+#fifth
+{
+	background: url(../images/storeapps.png) 50% 0 no-repeat fixed;
+	color: black;
+	height: 1300px;
+}
+#sixth
+{
+	background: url(../images/finalbgaboutme.png) 50% 0 no-repeat fixed;
+	color: black;
+	height: 1300px;
+	z-index: 1;
+}
+#sixth .mainText .float-left
+{
+	width: 900px;
+}
+.mainText .float-left, .mainText .float-right
+{
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 350px;
+}
+.menu
+{
+	list-style-type: none;
+}
+.menuItem
+{
+	position: relative;
+	display: inline;
+	z-index: 20;
+	padding: 20px;
+}
+.menuItem .innerItem
+{
+	display: none;
+	position: absolute;
+	max-width: 800px;
+	max-height: 800px;
+}
+.menuItem:hover .innerItem
+{
+	display: block;
+}
+.img2
+{
+	background: url(../images/aboutmephoto.jpg) 10% 10% no-repeat fixed;
+	background-size: contain;
+	height: 400px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 350px;
+	z-index: 3;
+}
+#award1
+{
+	background: url(../images/award1v2.png) 10% 10% no-repeat fixed;
+	height: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 800px;
+	max-width: 800px;
+	z-index: 20;
+}
+#award2
+{
+	background: url(../images/awardceremony.png) 10% 10% no-repeat fixed;
+	height: 1300px;
+	margin: 0 auto;
+	padding: 20px;
+	position: absolute;
+	width: 800px;
+	max-width: 800px;
+	z-index: 20;
+}
+#award3
+{
+	background: url(../images/nowyoucan.png) 10% 10% no-repeat fixed;
+	height: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 800px;
+	max-width: 800px;
+	z-index: 20;
+}
+.logoImg
+{
+	height: 75px;
+}
+.top
+{
+	cursor: pointer;
+}
+#work1
+{
+	background: url(../images/calcsnap.png) 10% 10% no-repeat fixed;
+	height: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 800px;
+	max-width: 800px;
+	z-index: 20;
+}
+#work2
+{
+	background: url(../images/ctf.png) 10% 10% no-repeat fixed;
+	background-size: 35%;
+	height: 1300px;
+	margin: 0 auto;
+	padding-right: 300px;
+	position: absolute;
+	width: 800px;
+	max-width: 800px;
+	z-index: 20;
+}
+#work3
+{
+	background: url(../images/side8.png) 10% 10% no-repeat fixed;
+	height: 1300px;
+	margin: 0 auto;
+	padding: 0 50px 0;
+	position: absolute;
+	width: 800px;
+	max-width: 800px;
+	z-index: 20;
+}
+.footer
+{
+	margin-top: 100%;
+}

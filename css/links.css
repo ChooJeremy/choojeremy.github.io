@@ -1,0 +1,158 @@
+#links
+{
+	background-color: #DCDCDC;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 80px;
+}
+#links ul
+{
+	margin-bottom: 0px;
+}
+#links ul li
+{
+	position: relative;
+	z-index: 10;
+}
+#links ul li:last-child
+{
+	z-index: 5;
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	text-align: right;
+}
+#login-text
+{
+	padding: 8px 0;
+	line-height: 20px;
+}
+#links ul li:last-child a 
+{
+	padding: 0px;
+	color: rgb(0, 85, 128);
+}
+#links ul li:last-child:hover
+{
+	width: 500px;
+}
+#links ul li:last-child:hover a
+{
+	border-color: #DCDCDC;
+	background-color: #DCDCDC;
+}
+#links ul li:last-child a div
+{
+	display: none;
+	position: absolute;
+	width: 500px;
+	height: 43px;
+	top: 36px;
+	right: -5px;
+	background-color: #DCDCDC;
+}
+#links ul li:last-child:hover a div
+{
+	display: block;
+}
+/* Make the drop down always visible on mobile devices */
+/* iThings without retina display */
+@media screen and (max-device-width: 481px) {
+	
+	#links ul li:last-child a div
+	{
+		display: block;
+	}
+}
+/* iThings with retina display */
+@media screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+	#links ul li:last-child a div
+	{
+		display: block;
+	}
+}
+#links ul li:last-child a div ul
+{
+	list-style: none outside none;
+	margin-left: 0px;
+}
+#links ul li:last-child a div ul li
+{
+	display: inline;
+	left: -120px;
+	z-index: 2;
+}
+#links ul li:last-child a div ul li:first-child
+{
+	left: -150px;
+}
+#links ul li:last-child a div form ul li:first-child
+{
+	left: -120px;
+}
+#links ul li:last-child a div ul li label
+{
+	display: inline;
+	vertical-align: middle;
+}
+#links ul li:last-child a div ul li input
+{
+	width: 20px;
+	vertical-align: middle;
+	margin-top: 10px;
+}
+/* Fix for other browsers */
+#login-text a div ul li input
+{
+	padding-left: 8px;
+	padding-right: 16px;
+}
+/* Place it back for Firefox */
+@-moz-document url-prefix() {
+	#login-text a div ul li input
+	{
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}
+#links ul li:last-child a div form ul li input
+{
+	width: 100px;
+}
+#links ul li:last-child a div ul li:last-child
+{
+	z-index: 1;
+}
+/* Fix the problem of hovers above */
+#links ul li:last-child a div ul li:last-child:hover
+{
+	width: 615px;
+}
+#links ul li:last-child a div ul li:last-child form
+{
+	display: inline;
+	width: 100px;
+}
+#links ul li:last-child a div ul li:last-child input
+{
+	margin-top: 11px;
+	margin-left: 5px;
+	position: relative;
+}
+#links ul li:last-child a div ul li:last-child form:last-child input
+{
+	width: 100px;
+}
+.invisible
+{
+	visibility: hidden;
+}
+.minimize
+{
+	width: 0px;
+}
+.no-pointer
+{
+	cursor: default;
+}

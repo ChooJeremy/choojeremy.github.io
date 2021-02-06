@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Butthurt</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-37989419-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<script>
+			function submitAttempt()
+			{
+				var i = document.getElementById("txtName");
+				if(i.value == "")
+				{
+					performNext(0, i);
+					return false;
+				}
+				else
+				{
+					return true;
+				}
+			}
+			function performNext(t, i)
+			{
+				if(t % 2 == 0)
+				{
+					makeRed(i);
+				}
+				else
+				{
+					reset(i);
+				}
+				if(t <= 6)
+				{
+					setTimeout(function() {performNext(t+1, i)}, 500);
+				}
+			}
+			function reset(i)
+			{
+				i.style.background="white";
+			}
+			function makeRed(i)
+			{
+				i.style.background='#FF3333';
+			}
+		</script>
+	</head>
+     
+	<body style="margin: 10px">
+		<form action="redirector_butthurt.html" method="get" onSubmit="return submitAttempt()">
+			<label for="txtName">Please input a value, then click submit</label>
+			<input style="margin-top: 10px;" type="text" name="txtName" id="txtName" readonly="readonly" required="required" />
+			<input type="submit" value="Submit" class="btn" />
+		</form>
+		<div id="extra">
+		</div>
+	</body>
+</html>

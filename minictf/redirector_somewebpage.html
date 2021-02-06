@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+	const urlParams = new URLSearchParams(window.location.search);
+	if(urlParams.get('tAndCAccept') !== null) {
+		window.location.href = "securedatabase"
+	} else {
+		window.location.href = "somewebpage"
+	}
+</script>
+</body>
+</html>

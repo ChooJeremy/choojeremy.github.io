@@ -1,0 +1,48 @@
+#contents
+{
+	margin: 0px 100px;
+}
+.head-section
+{
+	border-left: 5px solid;
+	padding-left: 10px;
+	border-bottom: 1px solid;
+	padding-bottom: 3px;
+	background-color: aqua;
+	margin: 50px 0px 10px;
+}
+.q-and-a
+{
+	margin-left: 10px;
+}
+.q-and-a .answer
+{
+	margin-left: 15px;
+}
+/* Target all elements with an answer class that is after an element with an answer class. */
+.q-and-a .answer ~ .answer:before
+{
+	content: '';
+}
+.question
+{
+	font-size: 120%;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.question:before
+{
+	content: 'Q: ';
+}
+.answer:before
+{
+	content: 'A: ';
+}
+.index-item
+{
+	cursor: pointer;
+}
+.index-item:hover
+{
+	text-decoration: underline;
+}

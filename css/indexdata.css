@@ -1,0 +1,158 @@
+.center-text
+{
+	display: block;
+	text-align: center;
+}
+#actual-content
+{
+	padding: 5px;
+}
+#actual-content .the-image
+{
+	display: inline-block;
+	width: 50%;
+	position: relative;
+	float: left;
+	margin-right: 5px;
+	border: thin silver solid;
+}
+#actual-content .the-image img
+{
+	width: 100%;
+}
+#actual-content .caption
+{
+	font-style: italic;
+	font-size: 90%;
+	padding: 0 5px;
+}
+#actual-content .side-text
+{
+}
+#actual-content .end-text
+{
+	font-weight: bold;
+}
+#actual-content .note
+{
+	padding: 5px;
+	padding-top: 30px;
+	font-size: 120%;
+}
+#actual-content .note-red
+{
+	background: #cc0000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #cc0000 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(99%,#cc0000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#cc0000 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#cc0000 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#cc0000 99%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#cc0000 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cc0000',GradientType=0 ); /* IE6-9 */
+	color: white;
+}
+#actual-content .note-green
+{
+	background: #54e500; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #54e500 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#54e500)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#54e500 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#54e500 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#54e500 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#54e500 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#54e500',GradientType=0 ); /* IE6-9 */
+	color: black;
+}
+#actual-content .note-blue
+{
+	background: #0010fc; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #0010fc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#0010fc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#0010fc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#0010fc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#0010fc 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#0010fc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0010fc',GradientType=0 ); /* IE6-9 */
+	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /* Give a black border */
+	color: white;
+}
+#actual-content .note a
+{
+	color: black;
+}
+.hidden
+{
+	display: none;
+}
+.darker
+{
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+}
+.popup
+{
+    z-index: 31;
+    position: fixed;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    margin-left: -300px;
+    margin-top: -200px;
+    text-align: center;
+    padding: 5px;
+    border-style: outset;
+    border-width: 5px;
+}
+.popup h3
+{
+    padding: 0;
+    margin: 0;
+    font-size: 200%
+}
+.popup pre
+{
+    font-family: monospace;
+    word-break: normal;
+    height: 230px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.popup img:first-child
+{
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	width: 20px;
+	height: 20px;
+}
+#license ul
+{
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1300px;
+}
+#license ul li
+{
+	display: inline-block;
+	margin: 10px;
+	position: relative;
+	z-index: 1;
+}
+#license ul li form input
+{
+	height: 30%;
+}
+.show-pointer
+{
+	cursor: pointer;
+}

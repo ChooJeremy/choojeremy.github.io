@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/links.css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<!--Fall back to local jquery if google fails -->
+		<script>window.jQuery || document.write('<script src="../_scripts/jquery2.0.2.min.js"><\/script>')</script>
+	</head>
+     
+	<body>
+		<div id="links">
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="#">Home</a>
+				</li>
+			    <li><a href="#">About me</a></li>
+			    <li><a href="#">Contact me</a></li>
+			    <li><a href="#">Gallery</a></li>
+			    <li>
+			    	<a>
+			    		<img src="images/downarrow.png" alt="">
+			    		Login
+			    		<div>
+							<form name="login-form" action="loginrequired" method="get">
+								<ul>
+									<li>
+										<label for="username">Username: </label>
+										<input class="text-input" id="username" name="username" required="required" type="text" />
+									</li>
+									<li>
+										<label for="password">Password: </label>
+										<input class="text-input" id="password" name="password" required="required" type="password" /> 
+									</li>
+									<li>
+										<input class="btn btn-primary" type="submit" value="Submit" />
+									</li>
+								</ul>
+							</form>
+			    		</div>
+			    	</a>
+			    </li>
+			</ul>
+		</div>
+		<div id="contents">
+			<p id="success">
+			</p>
+			<br />
+			<a href="index">
+				<button type="button" class="btn">Back to index</button>
+			</a>
+		</div>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-37989419-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<script type="text/javascript"> 
+			const urlParams = new URLSearchParams(window.location.search);
+			if(urlParams.get('username') !== null && urlParams.get("password") !== null) {
+				$("#success").text("Congrats! You managed to log in, " + urlParams.get("username"))
+			}
+		</script>
+	</body>
+</html>

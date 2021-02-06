@@ -1,0 +1,19 @@
+/*
+This is a file to fix the fieldset change bootstrap does and make it look more like how the normal web does it
+Usage: Invlide this file as a css a file in your head
+Required: apply the class .fix to any fieldset that you wish to fix. This will automatically fix the legend.
+Restricted: You may not use fix as a class.
+Sample: <site root>/minicf/index;
+*/
+fieldset.fix
+{
+	padding-bottom: 10.5px;
+	padding-left: 8.75px;
+	padding-right: 8.75px;
+	padding-top: 4.9px;
+	border: 2px solid;
+}
+fieldset.fix legend
+{
+	width: auto;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Secure Database</title>
+		<meta charset='utf-8' />
+		<link rel="stylesheet" href="css/sd.css" />
+		<script type="text/javascript" src="js/sd.js"></script>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-37989419-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	</head>
+	
+	<body>
+		<h1>Extremely Secure Database</h1>
+		<p>Warning: This database is unhackable. Do not attempt hacking, it will never work out. If you have arrived here on mistake and do not know anything about this, please <a href="https://www.google.com">leave immediately</a>. There is no way you will be able to do anything here if you do not have the correct username and password. This database is protected and cannot be pentrated by even internal attacks, so do not even bother trying. </p>
+		<p>Here is the login form for those who are part of this secure database and wishes to log in: </p>
+		<form name="loginForm" action="redirector_securedatabase" onSubmit="return logIn()" method="get">
+			<ul>
+				<li>
+					<label for="username">Username: </label>
+					<input id="username" name="username" required="required" type="text" />
+				</li>
+				<li>
+					<label for="password">Password: </label>
+					<input id="password" name="password" required="required" type="password" /> 
+				</li>
+				<li>
+					<input type="submit" value="Submit" />
+				</li>
+			</ul>
+		</form>
+		<p id="fakeLink">Forgot password?</p>
+		<p>Sorry, the forgot password link has been disabled, as to improve the security of this extremely secure database, we cannot simply allow just anyone to check if their password is forgotten or not. Please verify your identity through logging in to be able to click the forgot password link.</p>
+		<img src="images/lock.jpg" alt="lock" />
+		<p>Remember, if you do not belong here, please leave immediately.</p>
+	</body>
+</html>

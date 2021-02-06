@@ -1,0 +1,92 @@
+#links
+{
+	background-color: #DCDCDC;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 80px;
+}
+#links ul
+{
+	margin-bottom: 0px;
+}
+#links ul li
+{
+	position: relative;
+	z-index: 10;
+}
+#links ul li:last-child
+{
+	z-index: 11;
+	position: absolute;
+}
+#links ul li:last-child
+{
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	text-align: right;
+}
+#links ul li:last-child:hover a div
+{
+	display: block;
+}
+#links ul li:last-child a 
+{
+	padding: 0px;
+	color: rgb(0, 85, 128);
+}
+#links ul li:last-child:hover
+{
+	width: 500px;
+}
+#links ul li:last-child:hover a
+{
+	border-color: #DCDCDC;
+	background-color: #DCDCDC;
+}
+#links ul li:last-child a div
+{
+	display: none;
+	position: absolute;
+	width: 500px;
+	height: 43px;
+	top: 36px;
+	right: -5px;
+	background-color: #DCDCDC;
+}
+#links ul li:last-child a div ul
+{
+	list-style: none outside none;
+}
+#links ul li:last-child a div ul li
+{
+	display: inline;
+}
+#links ul li:last-child a div ul li label
+{
+	display: inline;
+	vertical-align: middle;
+}
+#links ul li:last-child a div ul li input
+{
+	width: 100px;
+	vertical-align: middle;
+	margin-top: 10px;
+}
+#links ul li:last-child a div ul li:last-child input
+{
+	margin-top: 11px;
+	margin-left: 5px;
+	position: absolute;
+	right: -110px;
+}
+#contents
+{
+	background-color: #7FFFD4;
+	height: 1300px;
+	padding: 10px;
+}
+.nav-tabs .active a, .nav-tabs .active a:hover
+{
+	background-color: #7FFFD4;
+}
