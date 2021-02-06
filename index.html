@@ -24,9 +24,9 @@
 				<p>Jeremy's</p>
 				<p>projects and works | <a href="downloads/resume.pdf">(Resume)</a></p>
 				<p id="selection">
-					<span id="ongoing" onclick="showOngoing()">Ongoing</span> | 
-					<span id="completed" onclick="showCompleted()">Completed</span> | 
-					<span id="experiments" onclick="showExperiments()">Experiments</span>
+					<span id="ongoing-label" onclick="showOngoing()">Ongoing</span> | 
+					<span id="completed-label" onclick="showCompleted()">Completed</span> | 
+					<span id="experiments-label" onclick="showExperiments()">Experiments</span>
 				</p>
 			</div>
 			<div id="content-container">
@@ -142,26 +142,26 @@
 				$("#ongoing-table").addClass("hidden");
 				$("#completed-table").addClass("hidden");
 				$("#experiments-table").addClass("hidden");
-				$("#ongoing").removeClass("emphasis");
-				$("#completed").removeClass("emphasis");
-				$("#experiments").removeClass("emphasis");
+				$("#ongoing-label").removeClass("emphasis");
+				$("#completed-label").removeClass("emphasis");
+				$("#experiments-label").removeClass("emphasis");
 			}
 			function showOngoing() {
 				hideAll();
 				$("#ongoing-table").removeClass("hidden");
-				$("#ongoing").addClass("emphasis");
+				$("#ongoing-label").addClass("emphasis");
 				window.location.hash = "ongoing";
 			}
 			function showCompleted() {
 				hideAll();
 				$("#completed-table").removeClass("hidden");
-				$("#completed").addClass("emphasis");
+				$("#completed-label").addClass("emphasis");
 				window.location.hash = "completed";
 			}
 			function showExperiments() {
 				hideAll();
 				$("#experiments-table").removeClass("hidden");
-				$("#experiments").addClass("emphasis");
+				$("#experiments-label").addClass("emphasis");
 				window.location.hash = "experiments";
 			}
 			$(function() {
