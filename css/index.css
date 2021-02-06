@@ -2,6 +2,7 @@
 #contents
 {
 	padding: 10px;
+	text-align: center;
 }
 #top-content
 {
@@ -11,6 +12,47 @@
 {
 	font-size: 200%;
 	font-family: cursive;
+}
+#selection span {
+	cursor: pointer;
+}
+#top-content .emphasis
+{
+	font-weight: bold;
+}
+.table td {
+	position: relative;
+	width: 25%;
+}
+.table .name {
+	position: absolute;
+	border-right: 1px solid black;
+	border-bottom:  1px solid black;
+	border-bottom-right-radius: 25px;
+	background-color: white;
+	padding: 10px;
+	opacity: 90%;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+	z-index: 20;
+}
+.table img {
+	width: 100%;
+	position: relative;
+}
+.table td .info {
+	position: absolute;
+	text-align: center;
+	padding: 5px;
+	background-color: white;
+	left: 0;
+	font-size: small;
+	z-index: 10;
+	top: 50px;
+}
+#content-container table {
+	width: 100%;
 }
 #content-mini-pic
 {

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>choojeremy</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Jeremy's projects and works: CTF and vulnearbilities in programs, web design for the masses, Windows 8 applications and java programs" />
+		<meta name="fragment" content="!">
+		<link rel="stylesheet" href="css/bootstrap	.css" />
+		<link rel="stylesheet" href="css/links.css" />
+		<link rel="stylesheet" href="css/fieldsetfixer.css" />
+		<link rel="stylesheet" href="css/notallowed.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/indexdata.css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<!--Fall back to local jquery if google fails -->
+		<script>window.jQuery || document.write('<script src="_scripts/jquery2.0.2.min.js"><\/script>')</script>
+		<script src="_scripts/jquery.timeago.js" type="text/javascript"></script>
+		<script src="_scripts/jquery.animate-colors.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<div id="contents">
+			<div id="top-content">
+
+				<p>Jeremy's</p>
+				<p>projects and works | <a href="downloads/resume.pdf">(Resume)</a></p>
+				<p id="selection">
+					<span id="ongoing" onclick="showOngoing()">Ongoing</span> | 
+					<span id="completed" onclick="showCompleted()">Completed</span> | 
+					<span id="experiments" onclick="showExperiments()">Experiments</span>
+				</p>
+			</div>
+			<div id="content-container">
+				<table id="ongoing-table" class="table table-borderless">
+					<tr><td colspan="4">These are the projects I'm currently working on.</td> </tr>
+					<tr>
+						<td>
+							<a href="https://github.com/TEAMMATES/teammates"><span class="name">Teammates</span></a>
+							<img src="images/teammates.png" alt="Teammate's goals" />
+							<span class="info hidden">An open source project based on giving feedback or evalutions. Typically used by instructors for students. Used by 250,000 users in 1,773 institutions over 96 countries.</span>
+						</td>
+						<td>
+							<a href="https://github.com/ChooJeremy/Star-Pelt"><span class="name">Star Pelt</span></a>
+							<img src="images/starpelt.png" />
+							<span class="info hidden">A reaction based game where stars come at you and you have to block them. The idea is that as you do so a randomly generated melody will play. You can also use your own soundtrack and have the stars follow that soundtrack.</span>
+						</td>
+					</tr>
+				</table>
+				<table id="completed-table" class="table table-borderless">
+					<tr><td colspan="4">I consider these projects completed and it is unlikely that I will continue working on them.</td> </tr>
+					<tr>
+						<td>
+							<a href="https://github.com/ChooJeremy/NIDS-ML"><span class="name">Network Intrusion Detection System</span></a>
+							<iframe width="95%" height="310" style="margin-left: 2px;" src="https://www.youtube.com/embed/qaEHta23ayY" frameborder="0" allowfullscreen></iframe>
+							<span class="info hidden">A network intrusion detection system built to detect malicious traffic over legitimate traffic and block them in realtime, as well as detecting zero-day attacks.</span>
+						</td>
+						<td>
+							<a href="https://play.google.com/store/apps/details?id=ooo.jch.elevator"><span class="name">Competitve Elevator</span></a>
+							<img src="images/elevatormultiplayer.jpg" alt="Competitive elevator Screenshot" />
+							<span class="info hidden">Competitive Elevator - Can you fax more people than your opponent in an action paced elevator simulator? Available on Android for now.</span>
+						</td>
+						<td>
+							<a href="https://market.myo.com/app/55bb73efe4b0a3fcf96f69b3/space-shooter-for-stroke-patient"><span class="name">Myo Space Shooter</span></a>
+							<img src="images/spaceshootermyo.jpg" alt="Myo Space Shooter Screenshot" />
+							<span class="info hidden">Space Shooter - A 2d arcade-style game that uses the capabilities of the Myo armband to control the player. Created for stroke patients.</span>
+						</td>
+						<td>
+							<a href="https://github.com/keythkatz/GRPG"><span class="name">GRPG</span></a>
+							<iframe width="95%" height="310" style="margin-left: 2px;" src="https://www.youtube.com/embed/m_sm62NrTm8" frameborder="0" allowfullscreen></iframe>
+							<span class="info hidden">Generic Role-Playing Game - A 2d top down open world game similar to RuneScape, created in just 3 weeks and featured in Ngee Ann's showcase.</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="name">MeL pentesting</span>
+							<img src="images/melsnowstorm.png" alt="MeL with snowstorm" />
+							<span class="info hidden">MeL Vulnerability - A security vulnerability of Ngee Ann's learning portal was discovered and exposed to the relevant people.</span>
+						</td>
+						<td>
+							<a href="downloads/TheKingsHandDirectExecutable.exe"><span class="name">The King's Hand</span></a>
+							<img src="images/thekingshandposter.jpg" alt="The King's Hand Poster" />
+							<span class="info hidden">The King's Hand - A 3d fps Archery Assassination Stealth Mission based game similar to Assassin's Creed, but uses bows intead of guns.</span>
+						</td>
+						<td>
+							<a href="downloads/whoknows.zip"><span class="name">Who Knows</span></a>
+							<img src="images/wk.jpg" alt="Who Knows">
+							<span class="info hidden">Who Knows - A game inspired from Wits and Wages. It disguises learning as a game, in an attempt to help students learn and have fun.</span>
+						</td>
+						<td>
+							<a href="downloads/littlestrike.zip"><span class="name">Little Strike</span></a>
+							<img src="images/littlestrikeposter.jpg" alt="Little Strike Poster">
+							<span class="info hidden">Little Strike - a 2d top down multiplayer shooter game, using a peer to peer system, featuring multiple customizations for every player.</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="minictf/butthurt"><span class="name">Mini CTF</span></a>
+							<img src="images/ctf2.png" alt="ctf image" />
+							<span class="info hidden">A simple, minature CTF for users to try out and see if they can complete the challenges. Contains a rule page and shortcuts for all the challenges.</span>
+						</td>
+						<td>
+							<a href="http://apps.microsoft.com/windows/app/simple-petals-around-the-rose/f1c02d38-b548-4397-b8c4-ad7f34d42633"><span class="name">Petals around the rose</span></a>
+							<img src="images/spatr.png" alt="Simple Petals Around the Rose image" />
+							<span class="info hidden">Simple Petals Around the Rose, a game I created based on the game Petals Around the Rose, which challenges players to think outside the box</span>
+						</td>
+						<td>
+							<a href="http://apps.microsoft.com/windows/en-us/app/calculator-snap/2df489de-83b4-4de8-a6ae-8da3f1ef87e3"><span class="name">Calculator SNAP</span></a>
+							<img src="images/calculatorsnap.png" alt="Calculator SNAP image" />
+							<span class="info hidden">A Calculator that I developed for Windows 8, as part of my Microsoft Student Partners program. It features a text calculator to be used snapped.</span>
+						</td>
+						<td>
+							<a href="downloads/IndianPoker.jar"><span class="name">Indian Poker</span></a>
+							<img src="images/indianpoker.png" alt="Indian Poker image" />
+							<span class="info hidden"> A command-line game that runs a game of Indian Poker, also known as Blind man's bluff, a version of poker where you can't see your card.</span>
+						</td>
+					</tr>
+				</table>
+				<table id="experiments-table" class="table table-borderless">
+					<tr><td colspan="4">Call it experiments or abandoned projects, they were very helpful and I certainly learned from them. These projects are pushed aside and are not currently being worked on, though if my interest strikes I may pick them up again.</td> </tr>
+					<tr>
+						<td>
+							<a href="https://github.com/ChooJeremy/PoxBrain"><span class="name">PoxBrain</span></a>
+							<img src="images/poxbrain.png" alt="A screenshot of poxbrain back when it was running" />
+							<span class="info hidden">A database for the online game PoxNora, allowing searching for runes that match as many criteria as possible. Abandoned as I stopped playing PoxNora.</span>
+						</td>
+						<td>
+							<a href="downloads/queens.zip"><span class="name">Queens</span></a>
+							<img src="images/queens.png" alt="A screenshot of the queens game" />
+							<span class="info hidden">A tower defense game, but with a twist - towers prevent you from placing more towers in all 8 cardinal directions. Not fully abandoned, will likely pick it up at some point to publish it on Android.</span>
+						</td>
+						<td>
+							<a href="https://github.com/ChooJeremy/bugfree-spice"><span class="name">Name TBD</span></a>
+							<img src="images/bugfreespice.png" alt="A screenshot of the game">
+							<span class="info hidden">A game I made back in 2014 that involved fighting over your opponent with cards to control a battlefield. Using java and it's GUI elements, it's not exactly easy to work on.</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="overlay" onclick="removeOverlay();"></div>
+		<script>
+			function hideAll() {
+				$("#ongoing-table").addClass("hidden");
+				$("#completed-table").addClass("hidden");
+				$("#experiments-table").addClass("hidden");
+				$("#ongoing").removeClass("emphasis");
+				$("#completed").removeClass("emphasis");
+				$("#experiments").removeClass("emphasis");
+			}
+			function showOngoing() {
+				hideAll();
+				$("#ongoing-table").removeClass("hidden");
+				$("#ongoing").addClass("emphasis");
+				window.location.hash = "ongoing";
+			}
+			function showCompleted() {
+				hideAll();
+				$("#completed-table").removeClass("hidden");
+				$("#completed").addClass("emphasis");
+				window.location.hash = "completed";
+			}
+			function showExperiments() {
+				hideAll();
+				$("#experiments-table").removeClass("hidden");
+				$("#experiments").addClass("emphasis");
+				window.location.hash = "experiments";
+			}
+			$(function() {
+				$("#content-container table td").mouseover(function(obj) {
+					$(obj.currentTarget).find(".info").removeClass("hidden");
+				});
+				$("#content-container table td").mouseleave(function(obj) {
+					$(obj.currentTarget).find(".info").addClass("hidden");
+				});
+				if(window.location.hash == "#ongoing") {
+					showOngoing();
+				} else if(window.location.hash == "#experiments") {
+					showExperiments();
+				} else {
+					showCompleted();
+				}
+			});
+		</script>
+		<script>
+			//Required javascript code for the pages.
+			var gifLoaded = false;
+			function setGifLoaded()
+			{
+				$('#web-gif').attr('class', 'hidden');
+				$('#web-image').attr('class', '');
+				gifLoaded = true;
+			}
+		</script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript">
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-58900978-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</body>
+</html>
